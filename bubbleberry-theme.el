@@ -157,3 +157,5 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'bubbleberry)
+
+;;; bubbleberry-theme.el ends here
