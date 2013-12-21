@@ -1,14 +1,42 @@
+;;; bubbleberry-theme.el --- a theme based on LightTable for Emacs24.
+;;; Author: Jason Milkins <jasonm23@gmail.com>
+;;          Gaurav Giri github.com/grvgr
+;;; Url: https://github.com/jasonm23/emacs-bubbleberry-theme.el
+;;; Version: 0.1.0
+;;; Package-Requires: ((emacs "24.1"))
+;;;
+;;; Change Log:
+;;
+;;  0.1.0         : initial version
+;;
+;;; Licence:
+;;
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, version 3 of the License.
+;;
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.
+;;
+;; This file is not a part of Emacs
+;;
+;;; Commentary:
+;;
+;;  A theme inspired by the default LightTable theme, by Chris Granger
+
+(unless (>= 24 emacs-major-version)
+  (error "soothe-theme requires Emacs 24 or later."))
+
 (deftheme bubbleberry "Light Table like theme")
-
-;; Based on the theme used for LightTable (see: http://www.chris-granger.com/images/lightable/main.png )
-
-;; Source: https://gist.github.com/8065710
-;; Original Source: https://gist.github.com/3027622
 
 (custom-theme-set-variables
  'bubbleberry
  '(linum-format "%3i")
- ;; '(fringe-mode 5 nil (fringe))
  '(powerline-color1 "#3d3d68")
  '(powerline-color2 "#292945")
  )
@@ -118,5 +146,14 @@
    (((class color) (min-colors 8)  (background light)) (:foreground "#000000" :background "#FFFF00"))
    (((class color) (min-colors 8)  (background dark))  (:foreground "#ffffff" :background "#0000FF"))
    (((type tty) (class mono))  (:inverse-video t))  (t (:background "#888888"))))
+
+;; TODO - rainbow-delimiters support
+;; TODO - additional mode support
+;; TODO - review and expand terminal support
+
+;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'bubbleberry)
