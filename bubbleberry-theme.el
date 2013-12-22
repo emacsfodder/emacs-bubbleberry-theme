@@ -2,11 +2,12 @@
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;          Gaurav Giri github.com/grvgr
 ;;; Url: https://github.com/jasonm23/emacs-bubbleberry-theme
-;;; Version: 0.1.0
+;;; Version: 0.1.1
 ;;; Package-Requires: ((emacs "24.1"))
 ;;;
 ;;; Change Log:
 ;;
+;;  0.1.1         : Bugfix
 ;;  0.1.0         : initial version
 ;;
 ;;; Licence:
