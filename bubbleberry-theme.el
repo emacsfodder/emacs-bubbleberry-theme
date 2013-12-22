@@ -1,7 +1,7 @@
 ;;; bubbleberry-theme.el --- a theme based on LightTable for Emacs24.
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;          Gaurav Giri github.com/grvgr
-;;; Url: https://github.com/jasonm23/emacs-bubbleberry-theme.el
+;;; Url: https://github.com/jasonm23/emacs-bubbleberry-theme
 ;;; Version: 0.1.0
 ;;; Package-Requires: ((emacs "24.1"))
 ;;;
