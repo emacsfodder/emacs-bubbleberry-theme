@@ -31,7 +31,7 @@
 ;;
 ;;  A theme inspired by the default LightTable theme, by Chris Granger
 
-(unless (>= 24 emacs-major-version)
+(unless (>= emacs-major-version 24)
   (error "bubbleberry-theme requires Emacs 24 or later."))
 
 (deftheme bubbleberry "Light Table like theme")
