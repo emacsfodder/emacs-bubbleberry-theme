@@ -48,7 +48,7 @@
 
  ;; basic theming.
  '(default                          ((t (:foreground "#CCCCCC" :background "#202020" ))))
- '(region                           ((t (:background "#151515" ))))
+ '(region                           ((t (:background "#1f2b4b" ))))
  '(cursor                           ((t (:background "#EEEEEE" ))))
  '(fringe                           ((t (:background "#2F2F2F" :foreground "#FFFFFF" ))))
  '(linum                            ((t (:background "#202020" :foreground "#777777" :box nil :height 100 ))))
